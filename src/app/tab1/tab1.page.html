@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item *ngFor="let item of userListe">
+  <ion-avatar item-start>
+     <ion-img 
+        [src]="" 
+        width="40" 
+        height="40"  
+        cache=true></ion-img>
+  </ion-avatar>
+  <ion-label>
+
+    <h2>{{ item.prenom }}</h2>
+    <h3>{{ item.email }}</h3>
+  </ion-label>
+
+</ion-item>
+</ion-content>
